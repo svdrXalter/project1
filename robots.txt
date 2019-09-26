@@ -19,6 +19,6 @@ Disallow: /price
 Disallow: /*.pdf$
 Disallow: /404.php
 
-Host: http://inter-alfa.com.ua
+Host: https://inter-alfa.com.ua
 
-Sitemap: http://inter-alfa.com.ua/sitemap.xml
+Sitemap: https://inter-alfa.com.ua/sitemap.xml
