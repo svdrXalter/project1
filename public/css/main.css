@@ -1,0 +1,1173 @@
+html,body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background: #778899;
+}
+.description {
+    font-size: 40px;
+    color: black;
+    margin-left: 46%;
+    text-shadow: 1px 1px #444;
+    text-align: center;
+    width: 460px;
+    font-weight: bold;
+}
+.card img {
+    width: 100%;
+    height: 78%;
+    padding: 0;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    width: 330px;
+    height: 450px;
+    border: 2px grey;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: darkslategrey;
+    margin-top: 50px;
+    margin-left: 12px;
+    float: left;
+    left: 23%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card p {
+    color: white;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    border: 2px grey;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-decoration: none;
+}
+.card button {
+    background-image: url('/images/dep.jpg');
+    width: 120px;
+    height: 30px;
+    border: 4px grey;
+    border-radius: 40px;
+    font-size: 20px;
+    margin: -10px auto ;
+}
+.card button:hover {
+    background: grey;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 23%;
+    left: 30%;
+    background: darkcyan;
+    width: 750px;
+    height: 450px;
+    overflow: visible;
+    box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+.modal img {
+    float: left;
+    margin-left: 10px;
+    width: 45%;
+    border: 20px mediumvioletred;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-body button {
+    position: relative;
+    background: yellow;
+    width: 30px;
+    height: 30px;
+    border: 2px grey;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    top: 20px;
+
+}
+.cost {
+    position: relative;
+    top: 50px;
+    font-style: italic;
+}
+
+.p {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.modal-body span p {
+    position: relative;
+    color: black;
+    font-size: 30px;
+    top: 20px;
+    font-weight: bold;
+}
+.modal-footer button {
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    background: cadetblue;
+    margin: 20px auto;
+    top: 77%;
+    left: 62%;
+}
+.modal-header h2 {
+    font-style: italic;
+    color: white;
+}
+.overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    cursor: default;
+    opacity: 0.6;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.closeBtn {
+    position: absolute;
+    left: 93%;
+    width: 40px;
+    background: cornflowerblue;
+    border: 2px grey;
+    border-radius: 50px;
+    cursor: default;
+}
+.cart-cart img {
+    width: 80px;
+}
+
+
+#header {
+    width: 100%; height: 145px;
+    background: url('/images/header.jpg');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+}
+
+#fb {
+    width: 1px;height: 10px;
+    color: blue;
+    margin-left: 35%;
+    margin-top: -1%;
+    display: block;
+}
+#ihome {
+    width: 10px;height: 20px;
+    color: blue;
+    margin-left: 40%;
+    margin-top: -0.7%;
+    display: block;
+}
+#fba {
+    text-decoration: none;
+    text-shadow: 1px 1px #444;
+}
+
+#logo {
+    width: 150px; height: 100px;
+    margin-top: -5.5%; margin-left: 3.5%
+}
+#headerText {
+
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 1px 1px #444;
+    color: #ffe47a;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+
+}
+#miniText{
+    width: 25%;
+    height: 70px;
+    margin-top: 7%;
+    font-size: 37px;
+    margin-left: 50%;
+    text-shadow: 1px 1px #444;
+    text-align: center;
+    border: 2px grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #000000;
+}
+#textAbout {
+    width: 75.5%;
+    height: 390px;
+    margin-left: 23.5%;
+    margin-top: 7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Courgette', serif;
+    background-color: transparent;
+}
+
+#box {
+    width: 220px; height: 100px;
+    margin-left: 83%; margin-top: -10%;
+
+}
+
+#clink {
+    color: #F0FFFF;
+    text-decoration: none;
+}
+#clink a:hover {
+    opacity: 0.1;
+}
+#href {
+    font-size: 15px;
+    padding: 1px 0;
+    color: black;
+}
+#href1 {
+    font-size: 14px;
+    padding: 1px 0;
+    color: black;
+}
+
+.pr {
+    font-size: 16px;
+    padding: 2px;
+    margin-left: -8px;
+}
+.nrz {
+    font-size: 14px;
+    padding: 0px 20px
+}
+.fltr {
+    font-size: 14px;padding: 0px 20px
+}
+#ul1 {
+    background:inherit;
+    list-style-type: none;
+    margin-left: 39%;
+    margin-top: -1%;
+    padding: 0;
+    overflow: hidden;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    border: 2px grey;
+    border-radius: 12px;
+}
+
+#li1 {
+    float: left;
+    margin-left: 7%;
+
+}
+
+#li1 a {
+    display: block;
+    color: #F0FFFF;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+#li1 a:hover {
+    background-color: #111;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    width: 22%;
+    background: url('/images/navbar.jpg');
+    border: 2px;
+    border-top-right-radius: 18px;
+
+    /*background: linear-gradient(to bottom, #536976, #292e49);*/
+    /*background: linear-gradient(to right, #606c88, #3f4c6b);*/
+    /*background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);*/
+
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+    font-family: 'Libre Baskerville', serif;
+    z-index: 1000
+
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 0px 24px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: -4px;
+
+
+}
+
+li a:hover {
+    background-color: grey;
+    color: white;
+}
+#price {
+    text-align: center;
+    float: left;
+    margin-left: 25%;
+    margin-top: 5%;
+    color: black;
+    width: 80px;
+    border: 2px grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: url('/images/header.jpg');
+}
+#price p {
+    font-weight: bold;
+    font-style: italic;
+}
+#price:hover {
+    background: grey;
+}
+
+.minCart {
+    z-index: 100;
+    position: fixed;
+    text-align: center;
+    top: 30%;
+    left: 90%;
+    color: black;
+    height: 100px;
+    width: 60px;
+    background: url('/images/minCart.png')no-repeat center center;
+}
+
+.minCart p {
+    position: relative;
+    top: 40px;
+    left: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 25px;
+    border: 4px grey;
+    border-radius: 25px;
+    color: black;
+    background: cadetblue;
+}
+
+.linkA {
+    position: fixed;
+    top: 27.5%;
+    left: 89.5%;
+    z-index: 100;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.product {
+    display: inline-block;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border: 2px grey;
+    border-radius: 100px;
+    background: darkslategrey;
+    margin-top: 50px;
+    margin-left: 15px;
+    float: left;
+    left: 23%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product img {
+    border: 2px grey;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.product:hover {
+    opacity: 0.7;
+}
+
+.mobSideB {
+    display: none;
+    position: fixed;
+    top: 3%;
+    background: url("/images/header.jpg");
+    list-style-type: none;
+    padding: 0;
+    overflow: visible;
+    width: 70px;
+    height: 370px;
+    border: 2px grey;
+    border-radius: 36px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: height 0.2s, box-shadow 0.2s;
+}
+.mobSideB img {
+    width: 25px;
+    justify-content: left;
+}
+.mobSideB span {
+    position: relative;
+    display: block;
+    top: 10px;
+    right:20px;
+    animation: slideIn 0.15s backwards;
+    animation-delay: 0s;
+    transition: transform 0.2s;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px grey;
+}
+.mobSideB li {
+    display: block;
+    color: #F0FFFF;
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+    top: 10px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+}
+.mobileNav {
+    display: none;
+    background: inherit;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    height: 30px;
+    width: 240px;
+    position: relative;
+    top: 10px;
+    left: 19%;
+    border: 2px grey;
+    border-radius: 12px;
+}
+.mobileNav li {
+    float: left;
+    margin-left: 10px;
+}
+.mobileNav a {
+    display: block;
+    color: #F0FFFF;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+.tabPhone {
+    display: none;
+    position: relative;
+    top: -125px;
+    left: 91%;
+    width: 30px;
+    height: 30px;
+    background: url("/images/tPhone.png") no-repeat center center;
+    border: 1px grey;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    justify-content: center;
+}
+
+.tabMail {
+    display: none;
+    position: relative;
+    top: -110px;
+    left: 91%;
+    width: 30px;
+    height: 30px;
+    background: url("/images/tMail.png") no-repeat center center;
+    border: 1px grey;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    justify-content: center;
+}
+.tabAdr {
+    display: none;
+    position: relative;
+    top: -95px;
+    left: 91%;
+    width: 30px;
+    height: 30px;
+    background: url("/images/adr.png") no-repeat center center;
+    border: 1px grey;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    justify-content: center;
+}
+.tabPhone a {
+    text-decoration: none;
+    color: black;
+}
+.tabMail a {
+    text-decoration: none;
+    color: black;
+}
+.tabAdr a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------------------------------------
+Mobile adaptation;
+ */
+
+@media (min-width: 330px) and (max-width: 700px){
+.mobSideB {
+    display: block;
+    top: 21%;
+    left: 1%;
+}
+.mobileNav {
+    display: block;
+}
+.sidebar {
+    display: none;
+}
+.description {
+   font-size: 12px;
+    width: 120px;
+    margin-left: 42%;
+}
+.minCart {
+    width: 50px;
+    height: 50px;
+    left: 82%;
+    top: 22%;
+    background: url("/images/minCartmin.png") no-repeat center center;
+}
+.minCart p {
+    position: relative;
+    left: 35px;
+    top: 25px;
+    font-size: 12px;
+    width: 15px;
+}
+
+.card {
+    margin-top: 20px;
+    margin-left: 8px;
+    left: 20%;
+    width: 135px;
+    height: 220px;
+}
+.product {
+    margin-top: 20px;
+    margin-left: 8px;
+    left: 20%;
+    width: 135px;
+    height: 200px;
+}
+.card p {
+    width: 100%;
+    height: 15px;
+    font-size: 10px;
+    padding-top: 0;
+
+}
+.card button {
+    width: 50px;
+    height: 20px;
+    margin: -10px auto;
+    font-size: 10px;
+}
+
+.linkA {
+    font-size: 10px;
+    left: 83%;
+    top: 20%;
+}
+.modal {
+    width: 300px;
+    height: 250px;
+    left: 10%;
+}
+.modal img {
+    width: 130px;
+    height: 150px;
+}
+.modal-header h2 {
+    font-size: 14px;
+}
+.modal-body button {
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.modal-body span p {
+    font-size: 18px;
+    top: 6px;
+}
+.cost {
+    top: 25px;
+}
+.modal-footer button {
+    width: 160px;
+    height: 30px;
+    font-size: 14px;
+    top: 88%;
+    left: 25%;
+}
+.closeBtn {
+    width: 25px;
+    left: 88%;
+}
+
+
+#price {
+    margin-top: 2%;
+    width: 40px;
+    height: 40px;
+}
+#price p {
+    font-size: 10px;
+}
+
+#fb {
+    display: none;
+}
+#fba {
+    display: none;
+}
+#ihome {
+    display: none;
+}
+#logo {
+    display: none;
+}
+#clink {
+    display: none;
+}
+#box {
+    display: none;
+}
+#headerText {
+    padding-top: 15px;
+    font-size: 36px;
+}
+#ul1 {
+    display: none;
+}
+
+}
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------
+ */
+@media (max-width: 330px){
+    .mobSideB {
+        display: block;
+        top: 27%;
+        left: 1%;
+    }
+    .mobileNav {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+    }
+    .description {
+        font-size: 12px;
+        width: 120px;
+        margin-left: 42%;
+    }
+    .minCart {
+        width: 50px;
+        height: 50px;
+        left: 82%;
+        top: 27%;
+        background: url("/images/minCartmin.png") no-repeat center center;
+    }
+    .minCart p {
+        position: relative;
+        left: 35px;
+        top: 25px;
+        font-size: 12px;
+        width: 15px;
+    }
+
+    .card {
+        margin-top: 20px;
+        margin-left: 8px;
+        left: 22%;
+        width: 115px;
+        height: 220px;
+    }
+    .product {
+        margin-top: 20px;
+        margin-left: 8px;
+        left: 22%;
+        width: 115px;
+        height: 200px;
+    }
+    .card p {
+        width: 100%;
+        height: 15px;
+        font-size: 10px;
+        padding-top: 0;
+
+    }
+    .card button {
+        width: 50px;
+        height: 20px;
+        margin: -10px auto;
+        font-size: 10px;
+    }
+
+    .linkA {
+        font-size: 10px;
+        left: 83%;
+        top: 24%;
+    }
+    .modal {
+        width: 300px;
+        height: 250px;
+        left: 10%;
+    }
+    .modal img {
+        width: 130px;
+        height: 150px;
+    }
+    .modal-header h2 {
+        font-size: 14px;
+    }
+    .modal-body button {
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .modal-body span p {
+        font-size: 18px;
+        top: 6px;
+    }
+    .cost {
+        top: 25px;
+    }
+    .modal-footer button {
+        width: 160px;
+        height: 30px;
+        font-size: 14px;
+        top: 88%;
+        left: 25%;
+    }
+    .closeBtn {
+        width: 25px;
+        left: 88%;
+    }
+
+
+    #price {
+        margin-top: 2%;
+        width: 40px;
+        height: 40px;
+    }
+    #price p {
+        font-size: 10px;
+    }
+
+    #fb {
+        display: none;
+    }
+    #fba {
+        display: none;
+    }
+    #ihome {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    #clink {
+        display: none;
+    }
+    #box {
+        display: none;
+    }
+    #headerText {
+        padding-top: 15px;
+        font-size: 30px;
+    }
+    #ul1 {
+        display: none;
+    }
+
+}
+/*
+----------------------------------------------------------------------------------------------------------------------------------------
+ */
+    @media (min-width: 768px) and (max-width: 1020px) {
+        #price {
+            margin-top: 3%;
+        }
+        #headerText {
+            font-size: 56px;
+
+        }
+        .description {
+            font-size: 20px;
+            width: 200px;
+            margin-left: 50%;
+            margin-top: 30px;
+        }
+        .card {
+            width: 280px;
+        }
+        .product {
+            width: 275px;
+        }
+        .modal {
+            top: 7%;
+            left: 10%;
+            width: 600px;
+        }
+        .tabPhone {
+            display: block;
+        }
+        .minCart {
+            top: 16%;
+            left: 87%;
+        }
+        .linkA {
+            top: 14%;
+            left: 86%;
+        }
+
+        .tabAdr {
+            display: block;
+        }
+
+        .tabMail {
+            display: block;
+        }
+
+        #miniText {
+            font-size: 28px;
+        }
+
+        #textAbout {
+            font-size: 16px;
+            height: 600px;
+        }
+
+        #ul1 {
+            margin-left: 30%;
+            margin-top: 15px;
+        }
+
+        #fb {
+            display: none;
+        }
+
+        #fba {
+            display: none;
+        }
+
+        #ihome {
+            display: none;
+        }
+
+        #logo {
+            display: none;
+        }
+
+        #clink {
+            display: none;
+        }
+
+        #box {
+            display: none;
+        }
+    }
+/*
+-------------------------------------------------------------------------------------------------------------------
+ */
+@media (min-width: 1024px) and (max-width: 1080px) {
+    ul {
+        height: 50%;
+    }
+    #price {
+        margin-top: 3%;
+    }
+    #headerText {
+        font-size: 72px;
+
+    }
+    .description {
+        font-size: 20px;
+        width: 200px;
+        margin-left: 50%;
+        margin-top: 30px;
+    }
+    .card {
+        width: 350px;
+    }
+    .product {
+        width: 350px;
+    }
+    .modal {
+        top: 7%;
+        left: 10%;
+        width: 600px;
+    }
+    .tabPhone {
+        display: block;
+        top: -140px;
+    }
+    .minCart {
+        top: 12%;
+        left: 87%;
+    }
+    .linkA {
+        top: 11%;
+        left: 86%;
+    }
+
+    .tabAdr {
+        display: block;
+        top: -110px;
+    }
+
+    .tabMail {
+        display: block;
+        top: -125px;
+    }
+
+    #miniText {
+        font-size: 28px;
+    }
+
+    #textAbout {
+        font-size: 16px;
+        height: 600px;
+    }
+
+    #ul1 {
+        margin-left: 35%;
+        margin-top: 5px;
+    }
+
+    #fb {
+        display: none;
+    }
+
+    #fba {
+        display: none;
+    }
+
+    #ihome {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #clink {
+        display: none;
+    }
+
+    #box {
+        display: none;
+    }
+}
+/*
+------------------------------------------------------------------------------------------------------------------------
+ */
+@media (min-width: 1920px) {
+    .product {
+        width: 470px;
+        height: 470px;
+    }
+    .minCart {
+        top: 18%;
+    }
+    .linkA{
+        top: 16.5%;
+    }
+    .card {
+        width: 470px;
+        height: 550px;
+    }
+    .card p {
+        font-size: 26px;
+    }
+    .card button {
+        width: 200px;
+        font-size: 24px;
+    }
+    .modal-body button {
+        width: 30px;
+        height: 30px;
+    }
+    #headerText {
+        font-size: 76px;
+    }
+    #ul1 {
+        margin-left: 45%;
+        margin-top: -8px;
+    }
+    #box {
+        margin-top: -7%;
+        margin-left: 85%;
+    }
+    #textAbout {
+        font-size: 36px;
+        height: 1200px;
+    }
+    .lia {
+        font-size: 20px;
+    }
+    .nrz {
+        font-size: 28px;
+    }
+    .fltr {
+        font-size: 28px;
+    }
+    .pr {
+        font-size: 28px;
+    }
+    #href {
+        font-size: 28px;
+    }
+    #href1 {
+        font-size: 28px;
+    }
+    #logo {
+        margin-top: -4%;
+    }
+
+}
+/*
+---------------------------------------------------------------------------------------------------------------------
+ */
+@media (min-width: 1500px) and (max-width: 1900px){
+    .product {
+        width: 390px;
+        height: 390px;
+    }
+    .minCart {
+        top: 18%;
+    }
+    .linkA{
+        top: 16.5%;
+    }
+    .card {
+        width: 390px;
+        height: 550px;
+    }
+    .card p {
+        font-size: 26px;
+    }
+    .card button {
+        width: 200px;
+        font-size: 24px;
+    }
+    .modal-body button {
+        width: 30px;
+        height: 30px;
+    }
+    #headerText {
+        font-size: 76px;
+    }
+    #ul1 {
+        margin-left: 42%;
+        margin-top: -13px;
+    }
+    #box {
+        margin-top: -8%;
+        margin-left: 85%;
+    }
+    #textAbout {
+        font-size: 36px;
+        height: 1200px;
+    }
+    .lia {
+        font-size: 20px;
+    }
+    .nrz {
+        font-size: 26px;
+    }
+    .fltr {
+        font-size: 26px;
+    }
+    .pr {
+        font-size: 26px;
+    }
+    #href {
+        font-size: 26px;
+    }
+    #href1 {
+        font-size: 26px;
+    }
+    #logo {
+        margin-top: -5%;
+    }
+
+}
+/*
+-----------------------------------------------------------------------------------------------------------------------
+ */
+@media (min-width: 1400px) and (max-width: 1500px){
+    .card {
+        width: 350px;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .product {
+        width: 350px;
+    }
+    .minCart {
+        top: 18%;
+    }
+    .linkA {
+        top: 17%;
+    }
+    #ul1 {
+        margin-top: -9px;
+    }
+    #box {
+        margin-top: -9%;
+    }
+    .pr {
+        font-size: 24px;
+    }
+    .nrz {
+        font-size: 24px;
+    }
+    .fltr {
+        font-size: 24px;
+    }
+    .lia {
+        font-size: 18px;
+    }
+    #href1 {
+        font-size: 24px;
+    }
+    #href {
+        font-size: 24px;
+    }
+}
