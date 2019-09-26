@@ -1,0 +1,13 @@
+include header.pug
+body
+    div(class='myBody')
+        h1 Hello!
+        img(src='images/icon.png')
+        button(onclick="alert('Hello')") Click on me!
+    div(class='second')
+        each val, index in goods
+            h3 #{val['name']}
+            img(src='images/micron/ '+val['image'])
+
+
+

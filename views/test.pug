@@ -1,0 +1,17 @@
+include testing
+include header
+body
+    each val, index in goods
+        div(class="card")
+            img(
+                src='images/micron/' + val['image'])
+            p цена : #{val['cost']}
+            button(class='add-to-cart modalBtn button' data-product_id=val['id']) Купить
+            div(class="simpleModal modal")
+                div(class="modal-content")
+                    div(class="modal-header")
+                    span(class="closeBtn") x
+                    h2 Modal Header
+                    div(class="modal-body")
+                        p #{val['art']}
+include footer

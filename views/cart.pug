@@ -1,0 +1,53 @@
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width,initial-scale=1.0')
+        link(rel='stylesheet', href='css/cart.css')
+        link(rel='stylesheet', href='css/all.css')
+        script(src='js/all.js')
+        link(href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet")
+        title Корзина | Интер-Альфа
+    body
+        include header
+            div.openBar
+                button
+                    i(class="fas fa-bars")
+            button(class='closeBar') x
+        include mobSidebar
+        div(class='alternative')
+            h1 Корзина пуста, но это всегда можно исправить!
+            a(href='/goods')
+                button Исправить
+        div(class="cart-cart")
+        button(class='modal-toggle') Оформить заказ
+        div(class='modal')
+            div(class='modal-content')
+                div(class="modal-header")
+                    button(class="modal-close") x
+                div(class="modal-body")
+                    form(id='sendForm' action='#')
+                        label Фамилия, имя, отчество:
+                        input(type="text" id="name" name="ФИО" value="" placeholder="Введите свое ФИО")
+                        label Ваш Email:
+                        input(type="text" id="mail" name="Email" value="" placeholder="Введите свой Email")
+                        label Телефон :
+                        input(type="text" id="phone" name="Телефон" value="" placeholder="Введите мобильный телефон")
+                        label Служба доставки :
+                        select(id="delivery" name="Доставка" placeholder="Выберите службу доставки")
+                            option
+                            option(value="Нова Пошта") "Нова Пошта"
+                            option(value="Интайм") "Интайм"
+                            option(value="Деливери") "Деливери"
+                            option(value="САТ") "САТ"
+                            option(value="Автотранссервис") "Автотранссервис"(только Днепр и Харьков)
+                            option(value="Самовывоз") Самовывоз
+                        label Адрес доставки и № отделения :
+                        input(type="text" id="adress" name="Адрес" value="" placeholder="Пример: г.Киев, отделение №1.")
+                        label Коментарии :
+                        input(type='text' id='comment' value='' maxlength='200' placeholder='Напишите ваши пожелания или коментарии к заказу')
+                        button(class="send-email upForm" type='submit') Заказать
+
+include testing

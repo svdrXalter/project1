@@ -1,0 +1,51 @@
+html
+    head
+    each val,index in cat
+        meta(name='description', content='' + val['description'])
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width,initial-scale=1.0')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='css/all.css')
+        link(rel='shortcut icon', href='images/favicon.png')
+        script(src='js/all.js')
+        link(href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet")
+        each val,index in cat
+            title #{val['category']} — купить Украина | Интер-Альфа
+    body
+        include mobSidebar
+        include header
+        include sidebar
+            a(href='price' target="_blank" rel='nofollow')
+                span(id='price')
+                    p Прайс-лист
+            a(href='/cart' rel='nofollow')
+                p(class='linkA') Корзина :
+                span(class='minCart')
+            each val,index in cat
+                p(class='description') #{val['category']}:
+                each val, index in goods
+                    div(class="card")
+                        img(
+                            src='images/micron/' + val['image'])
+                        p цена — #{val['cost']} грн/м²
+                        button(class='modalBtn add-to-cart' data-product_id=val['id']) Купить
+                        div(class="simpleModal modal")
+                            div(class="modal-content")
+                                div(class="overlay testBtn")
+                                div(class="modal-header")
+                                    span(class="closeBtn") x
+                                    h2 #{val['name']}
+                                div(class="modal-body")
+                                    img(src='images/micron/' + val['image'])
+                                    p(class='p') Укажите количество товара :
+                                    button(class="cart-minus" data-goods_id=val['id']) -
+                                    span(class="tester"+val['id'])
+                                    button(class="cart-plus" data-goods_id=val['id'] ) +
+                                    p(class='cost') Цена — #{val['cost']} грн/м²
+                                div(class="modal-footer")
+                                    button(class="showAlert nextBtn" data-product_id=val['id']) Добавить в корзину
+include footer
+
