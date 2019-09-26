@@ -1,20 +1,20 @@
 User-agent: *
-Disallow: /gost/
-Disallow: /cart/
+Disallow: /gost
+Disallow: /cart
 Disallow: /price
 Disallow: /*.pdf$
 Disallow: /404.php
 
 User-agent: GoogleBot
-Disallow: /gost/
-Disallow: /cart/
+Disallow: /gost
+Disallow: /cart
 Disallow: /price
 Disallow: /*.pdf$
 Disallow: /404.php
 
 User-agent: YandexBot
-Disallow: /gost/
-Disallow: /cart/
+Disallow: /gost
+Disallow: /cart
 Disallow: /price
 Disallow: /*.pdf$
 Disallow: /404.php
