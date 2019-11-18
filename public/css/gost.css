@@ -55,7 +55,13 @@ text-shadow: 1px 1px black;
     background: url('/images/map123.png');
     text-shadow: 1px 1px black;
 }
-
+.fasfa-bars {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/bars123.png');  
+}
 ul {
     display: none;
     list-style-type: none;
@@ -300,8 +306,8 @@ margin-left: 40%;
     animation-delay: 0s;
     transition: transform 0.2s;
     font-weight: bold;
-    color: black;
-    text-shadow: 1px 1px grey;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .mobSideB li {
     display: block;
@@ -1007,4 +1013,55 @@ Mobile adaptation
     }
 
 }
+
+
+@media (min-width: 1080px) and (max-width: 1280px) {
+    #ul1 {
+        top: -10px;
+    }
+    #box {
+        margin-top: -10.5%;
+    }
+ 
+}
+
+@media (min-width: 600px) and (max-width:720px) {
+    #headerText {
+    font-size: 60px;
+    }
+    .mobileNav {
+      left: 30%;
+      top: 0;
+    }
+    .mobSideB {
+        width: 100px;
+        top: 17%;
+    }
+    .openBar {
+        bottom: 40px;
+        margin-left: 40px;
+    }
+    .closeBar {
+        left: 35px;
+        top: -15px;
+    }
+    #content {
+        width: 590px;
+    }
+    #table {
+        width: 590px;
+        font-size: 12px;
+    }
+    }
+
+    @media (max-height:500px) {
+        .mobSideB {
+            height: 310px;
+            top: 33%;
+        }
+        .mobSideB li {
+        top: 0;
+        padding-top: 1px;
+        }
+    }
 
