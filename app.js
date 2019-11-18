@@ -154,18 +154,17 @@ console.log(mail);
 
     let testAccount = await nodemailer.createTestAccount();
 
-    let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false,
+      let transporter = nodemailer.createTransport({
+        service: 'Gmail',
         auth: {
-           user: testAccount.user,
-           pass: testAccount.pass
+           user: 'kotoboy@gmail.com',
+           pass: '$$Ibra-12345'
         }
     });
+    
 let mailOption = {
     from: '<kotoboy@gmail.com>',
-    to: "kotoboy@gmail.com," +data.mail,
+    to: "interalfa7@gmail.com",
     subject: 'Заказ "Интер-Альфа',
     text: 'Ваш заказ отправлен в формате HTML',
     html: mail
