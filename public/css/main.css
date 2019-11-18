@@ -5,6 +5,62 @@ html,body {
     overflow: auto;
     background: #778899;
 }
+.fasfa-home {
+    display: block;
+width: 18px;
+height: 18px;
+color: white;
+background: url('/images/home123.png');
+text-shadow: 1px 1px black;
+}
+.fasfa-shopping-cart {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/cart123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-phone {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/phone123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-store {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/store123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-envelope-open-text{
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/mail123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-map-marker-alt {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/map123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-bars {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/bars123.png');  
+}
+
 .description {
     font-size: 40px;
     color: black;
@@ -14,10 +70,23 @@ html,body {
     width: 460px;
     font-weight: bold;
 }
+.describe {
+position: relative;
+left: 31%;
+padding-left: 10px;
+margin-top: 20px;
+font-size: 20px;
+width: 60%;
+height: 15%;
+border: 4px grey;
+	border-radius: 16px;
+	background: url(/images/grey.jpg);
+}
 .card img {
     width: 100%;
     height: 78%;
     padding: 0;
+    cursor: pointer;
 }
 .card {
     display: inline-block;
@@ -30,7 +99,7 @@ html,body {
     background: darkslategrey;
     margin-top: 50px;
     margin-left: 12px;
-    float: left;
+    /* float: left; */
     left: 23%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -228,25 +297,34 @@ html,body {
 #href {
     font-size: 15px;
     padding: 1px 0;
-    color: black;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 #href1 {
     font-size: 14px;
     padding: 1px 0;
-    color: black;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 
 .pr {
     font-size: 16px;
     padding: 2px;
     margin-left: -8px;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .nrz {
     font-size: 14px;
-    padding: 0px 20px
+    padding: 0px 20px;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .fltr {
-    font-size: 14px;padding: 0px 20px
+    font-size: 14px;
+    padding: 0px 20px;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 #ul1 {
     background:inherit;
@@ -272,9 +350,9 @@ html,body {
     display: block;
     color: #F0FFFF;
     text-align: center;
-    padding: 12px 18px;
+    padding: 10px 13px;
     text-decoration: none;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #li1 a:hover {
@@ -305,7 +383,7 @@ ul {
 
 li a {
     display: block;
-    color: black;
+    color: #ffe47a;
     padding: 0px 24px;
     font-size: 12px;
     text-decoration: none;
@@ -323,7 +401,8 @@ li a:hover {
     float: left;
     margin-left: 25%;
     margin-top: 5%;
-    color: black;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
     width: 80px;
     border: 2px grey;
     border-radius: 8px;
@@ -333,6 +412,8 @@ li a:hover {
 #price p {
     font-weight: bold;
     font-style: italic;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 #price:hover {
     background: grey;
@@ -378,6 +459,7 @@ li a:hover {
 .product {
     display: inline-block;
     position: relative;
+    overflow: hidden;
     width: 330px;
     height: 330px;
     border: 2px grey;
@@ -385,7 +467,7 @@ li a:hover {
     background: darkslategrey;
     margin-top: 50px;
     margin-left: 15px;
-    float: left;
+    /* float: left; */
     left: 23%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -411,7 +493,7 @@ li a:hover {
     padding: 0;
     overflow: visible;
     width: 70px;
-    height: 370px;
+    height: 380px;
     border: 2px grey;
     border-radius: 36px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -430,8 +512,8 @@ li a:hover {
     animation-delay: 0s;
     transition: transform 0.2s;
     font-weight: bold;
-    color: black;
-    text-shadow: 1px 1px grey;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .mobSideB li {
     display: block;
@@ -460,13 +542,13 @@ li a:hover {
 }
 .mobileNav li {
     float: left;
-    margin-left: 10px;
+    margin-left: 13px;
 }
 .mobileNav a {
     display: block;
     color: #F0FFFF;
     text-align: center;
-    padding: 12px 18px;
+    padding: 10px 13px;
     text-decoration: none;
 }
 
@@ -525,12 +607,42 @@ li a:hover {
     text-decoration: none;
     color: black;
 }
+.modimg {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 3%;
+    left: 33%;
+    background: darkcyan;
+    width: 45%;
+    height: 95%;
+    overflow: visible;
+    box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+.modimg img {
+    width: 100%;
+    height: 100%;
+    border: 20px mediumvioletred;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modimg span {
+    position: absolute;
+    left: 98%;
+    width: 40px;
+    background: cornflowerblue;
+    border: 2px grey;
+    border-radius: 50px;
+    cursor: default;
+}
 
 /* -------------------------------------------------------------------------------------------------------------
 Mobile adaptation;
  */
 
 @media (min-width: 330px) and (max-width: 700px){
+.modimg {
+    height: 75%;
+}
 .mobSideB {
     display: block;
     top: 21%;
@@ -819,6 +931,9 @@ Mobile adaptation;
 ----------------------------------------------------------------------------------------------------------------------------------------
  */
     @media (min-width: 768px) and (max-width: 1020px) {
+        .modimg {
+            height: 75%;
+        }
         #price {
             margin-top: 3%;
         }
@@ -905,6 +1020,9 @@ Mobile adaptation;
 -------------------------------------------------------------------------------------------------------------------
  */
 @media (min-width: 1024px) and (max-width: 1080px) {
+    .modimg {
+        height: 75%;
+    }
     ul {
         height: 50%;
     }
@@ -1063,19 +1181,19 @@ Mobile adaptation;
 /*
 ---------------------------------------------------------------------------------------------------------------------
  */
-@media (min-width: 1500px) and (max-width: 1900px){
+@media (min-width: 1500px) and (max-width: 1600px){
     .product {
-        width: 390px;
+        width: 360px;
         height: 390px;
     }
     .minCart {
-        top: 18%;
+        top: 25%;
     }
     .linkA{
-        top: 16.5%;
+        top: 23.5%;
     }
     .card {
-        width: 390px;
+        width: 370px;
         height: 550px;
     }
     .card p {
@@ -1090,11 +1208,11 @@ Mobile adaptation;
         height: 30px;
     }
     #headerText {
-        font-size: 76px;
+        font-size: 70px;
     }
     #ul1 {
         margin-left: 42%;
-        margin-top: -13px;
+        margin-top: -20px;
     }
     #box {
         margin-top: -8%;
@@ -1105,32 +1223,32 @@ Mobile adaptation;
         height: 1200px;
     }
     .lia {
-        font-size: 20px;
+        font-size: 16px;
     }
     .nrz {
-        font-size: 26px;
+        font-size: 18px;
     }
     .fltr {
-        font-size: 26px;
+        font-size: 18px;
     }
     .pr {
-        font-size: 26px;
+        font-size: 18px;
     }
     #href {
-        font-size: 26px;
+        font-size: 18px;
     }
     #href1 {
-        font-size: 26px;
+        font-size: 18px;
     }
     #logo {
-        margin-top: -5%;
+        margin-top: -5.5%;
     }
 
 }
 /*
 -----------------------------------------------------------------------------------------------------------------------
  */
-@media (min-width: 1400px) and (max-width: 1500px){
+@media (min-width: 1400px) and (max-width: 1490px){
     .card {
         width: 350px;
     }
@@ -1147,27 +1265,152 @@ Mobile adaptation;
         top: 17%;
     }
     #ul1 {
-        margin-top: -9px;
+        margin-top: -11px;
     }
     #box {
         margin-top: -9%;
     }
     .pr {
-        font-size: 24px;
+        font-size: 20px;
     }
     .nrz {
-        font-size: 24px;
+        font-size: 20px;
     }
     .fltr {
-        font-size: 24px;
+        font-size: 20px;
     }
     .lia {
         font-size: 18px;
     }
     #href1 {
-        font-size: 24px;
+        font-size: 20px;
     }
     #href {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
+
+
+@media (min-width: 1090px) and (max-width: 1280px) {
+    .product {
+        width: 305px;
+    }
+    .card {
+        width: 305px;
+    }
+    #ul1 {
+        top: -5px;
+    }
+    #box {
+        margin-top: -10.5%;
+    }
+ 
+}
+
+@media (min-width: 600px) and (max-width:720px) {
+    #headerText {
+    font-size: 60px;
+    }
+    .mobileNav {
+      left: 30%;
+      top: 0;
+    }
+    ul.slides {
+        width: 430px;
+    }
+    .mobSideB {
+        width: 100px;
+        top: 17%;
+    }
+    .product {
+        width: 150px;
+    }
+    .card {
+        width: 150px;
+    }
+    .minCart {
+        top: 17%;
+    }
+    .linkA {
+        top: 15%;
+    }
+    .description {
+        margin-left: 47%;
+    }
+    .modal {
+        left: 30%;
+    }
+    }
+
+    @media (max-height:500px) {
+        .mobSideB {
+            height: 310px;
+            top: 33%;
+        }
+        .mobSideB li {
+        top: 0;
+        padding-top: 1px;
+        }
+    }
+
+    @media (min-width: 1620px) and (max-width: 1900px) {
+        .product {
+            width: 410px;
+            height: 470px;
+        }
+        .minCart {
+            top: 18%;
+        }
+        .linkA{
+            top: 16.5%;
+        }
+        .card {
+            width: 410px;
+            height: 550px;
+        }
+        .card p {
+            font-size: 26px;
+        }
+        .card button {
+            width: 200px;
+            font-size: 24px;
+        }
+        .modal-body button {
+            width: 30px;
+            height: 30px;
+        }
+        #headerText {
+            font-size: 76px;
+        }
+        #ul1 {
+            margin-left: 45%;
+            margin-top: -11px;
+        }
+        #box {
+            margin-top: -7%;
+            margin-left: 85%;
+        }
+        #textAbout {
+            font-size: 36px;
+            height: 1200px;
+        }
+        .lia {
+            font-size: 20px;
+        }
+        .nrz {
+            font-size: 26px;
+        }
+        .fltr {
+            font-size: 26px;
+        }
+        .pr {
+            font-size: 26px;
+        }
+        #href {
+            font-size: 26px;
+        }
+        #href1 {
+            font-size: 26px;
+        }
+    
+    }
