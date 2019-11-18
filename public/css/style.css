@@ -8,7 +8,54 @@ html,body {
 }
 
 
-
+.fasfa-home {
+    display: block;
+width: 18px;
+height: 18px;
+color: white;
+background: url('/images/home123.png');
+text-shadow: 1px 1px black;
+}
+.fasfa-shopping-cart {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/cart123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-phone {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/phone123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-store {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/store123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-envelope-open-text{
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/mail123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-map-marker-alt {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/map123.png');
+    text-shadow: 1px 1px black;
+}
 #header {
 	width: 100%; height: 145px;
 	/*background: linear-gradient(to right, #3d7eaa, #ffe47a);*/
@@ -93,10 +140,14 @@ margin-left: 40%;
 #href { 
   font-size: 15px;
   padding: 1px 0px;
+  color: #e09d0b;
+  text-shadow: 1px 1px black;
 }
 #href1 {
   font-size: 14px;
   padding: 1px 0px;
+  color: #e09d0b;
+  text-shadow: 1px 1px black;
 }
 
 ul {
@@ -122,7 +173,7 @@ background-image: url(/images/navbar.jpg);
 
 li a {
   display: block;
-  color: #000;
+  color: #ffe47a;
   padding: 0px 24px;
   font-size: 12px;
   text-decoration: none;
@@ -139,13 +190,20 @@ li a:hover {
     font-size: 16px;
     padding: 2px;
     margin-left: -8px;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .nrz {
     font-size: 14px;
-    padding: 0px 20px
+    padding: 0px 20px;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .fltr {
-    font-size: 14px;padding: 0px 20px
+    font-size: 14px;
+    padding: 0px 20px;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 
 .carousel {
@@ -326,9 +384,9 @@ input:checked + .slide-container .nav label { display: block; }
   display: block;
   color: #F0FFFF;
   text-align: center;
-  padding: 12px 18px;
+  padding: 10px 13px;
   text-decoration: none;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 #li1 a:hover {
@@ -363,8 +421,8 @@ input:checked + .slide-container .nav label { display: block; }
     animation-delay: 0s;
     transition: transform 0.2s;
     font-weight: bold;
-    color: black;
-    text-shadow: 1px 1px grey;
+    color: #e09d0b;
+    text-shadow: 1px 1px black;
 }
 .mobSideB li {
     display: block;
@@ -393,13 +451,13 @@ input:checked + .slide-container .nav label { display: block; }
 }
 .mobileNav li {
     float: left;
-    margin-left: 10px;
+    margin-left: 13px;
 }
 .mobileNav a {
     display: block;
     color: #F0FFFF;
     text-align: center;
-    padding: 12px 18px;
+    padding: 10px 13px;
     text-decoration: none;
 }
 
@@ -503,7 +561,7 @@ Mobile adaptation
     }
     #textAbout {
         font-size: 9px;
-        height: 250px;
+        height: 320px;
     }
     #miniText {
         font-size: 14px;
@@ -582,7 +640,7 @@ Mobile adaptation
     }
     #textAbout {
         font-size: 11px;
-        height: 300px;
+        height: 30px;
     }
     #miniText {
         font-size: 14px;
@@ -889,24 +947,142 @@ Mobile adaptation
 /*
 -------------------------------------------------------------------------------------------------------------------------
  */
-@media (min-width: 1500px) and (max-width: 1900px){
+@media (min-width: 1500px) and (max-width: 1600px) {
     ul.slides {
-        width: 1150px;
+        width: 1100px;
         height: 800px;
     }
     #headerText {
-        font-size: 76px;
+        font-size: 70px;
     }
     #ul1 {
         margin-left: 42%;
-        margin-top: -12px;
+        margin-top: -25px;
     }
     #box {
         margin-top: -8%;
         margin-left: 85%;
     }
     #textAbout {
-        font-size: 32px;
+        font-size: 24px;
+        height: 600px;
+    }
+    .lia {
+        font-size: 15px;
+    }
+    .nrz {
+        font-size: 18px;
+    }
+    .fltr {
+        font-size: 18px;
+    }
+    .pr {
+        font-size: 18px;
+    }
+    #href {
+        font-size: 18px;
+    }
+    #href1 {
+        font-size: 18px;
+    }
+
+}
+/*
+-----------------------------------------------------------------------------------------------------------------------
+ */
+@media (min-width: 1400px) and (max-width: 1500px)  {
+    ul.slides {
+        margin-left: -10px;
+    }
+    #ul1 {
+        margin-top: -12px;
+    }
+    #box {
+        margin-top: -9%;
+    }
+   .pr {
+       font-size: 20px;
+   }
+   .nrz {
+      font-size: 20px;
+   }
+   .fltr {
+       font-size: 20px;
+   }
+   .lia {
+      font-size: 18px;
+   }
+   #href1 {
+       font-size: 20px;
+   }
+   #href {
+       font-size: 20px;
+   }
+}
+
+@media (min-width: 1080px) and (max-width: 1280px) {
+    ul.slides {
+        width: 930px;
+    }
+    #ul1 {
+        top: -10px;
+    }
+    #box {
+        margin-top: -10.5%;
+    }
+    #textAbout {
+        width: 72%;
+        height: 420px;
+    }
+    
+}
+
+@media (max-height:500px) {
+    .mobSideB {
+        height: 310px;
+        top: 33%;
+    }
+    .mobSideB li {
+    top: 0;
+    padding-top: 1px;
+    }
+}
+
+@media (min-width: 600px) and (max-width:720px) {
+#headerText {
+font-size: 60px;
+}
+.mobileNav {
+  left: 30%;
+  top: 0;
+}
+ul.slides {
+    width: 430px;
+}
+.mobSideB {
+    width: 100px;
+    top: 17%;
+}
+}
+
+@media (min-width: 1620px) and (max-width: 1900px) {
+    ul.slides {
+        width: 1250px;
+        height: 800px;
+    }
+    #headerText {
+        font-size: 76px;
+    }
+    #ul1 {
+        margin-left: 45%;
+        margin-top: -11px;
+    }
+    #box {
+        margin-top: -7.5%;
+        margin-left: 85%;
+    }
+    #textAbout {
+        font-size: 36px;
         height: 900px;
     }
     .lia {
@@ -927,35 +1103,5 @@ Mobile adaptation
     #href1 {
         font-size: 26px;
     }
-
+    
 }
-/*
------------------------------------------------------------------------------------------------------------------------
- */
-@media (min-width: 1400px) and (max-width: 1500px){
-    #ul1 {
-        margin-top: -12px;
-    }
-    #box {
-        margin-top: -9%;
-    }
-   .pr {
-       font-size: 24px;
-   }
-   .nrz {
-      font-size: 24px;
-   }
-   .fltr {
-       font-size: 24px;
-   }
-   .lia {
-      font-size: 18px;
-   }
-   #href1 {
-       font-size: 24px;
-   }
-   #href {
-       font-size: 24px;
-   }
-}
-
