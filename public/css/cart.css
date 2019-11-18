@@ -6,7 +6,54 @@ html,body {
     background: #778899;
 }
 
-
+.fasfa-home {
+    display: block;
+width: 18px;
+height: 18px;
+color: white;
+background: url('/images/home123.png');
+text-shadow: 1px 1px black;
+}
+.fasfa-shopping-cart {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/cart123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-phone {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background: url('/images/phone123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-store {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/store123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-envelope-open-text{
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/mail123.png');
+    text-shadow: 1px 1px black;
+}
+.fasfa-map-marker-alt {
+    display: block;
+    width: 18px;
+    height: 18px;
+    color:white;
+    background: url('/images/map123.png');
+    text-shadow: 1px 1px black;
+}
 .table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -304,9 +351,9 @@ label {
     display: block;
     color: #F0FFFF;
     text-align: center;
-    padding: 12px 18px;
+    padding: 10px 13px;
     text-decoration: none;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #li1 a:hover {
@@ -447,13 +494,13 @@ li a:hover {
 }
 .mobileNav li {
     float: left;
-    margin-left: 10px;
+    margin-left: 13px;
 }
 .mobileNav a {
     display: block;
     color: #F0FFFF;
     text-align: center;
-    padding: 12px 18px;
+    padding: 10px 13px;
     text-decoration: none;
 }
 .openBar {
