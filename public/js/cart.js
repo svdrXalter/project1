@@ -9,7 +9,6 @@ document.querySelectorAll('.cart-minus').forEach(function (element) {
 document.querySelectorAll('.cart-plus').forEach(function (element) {
     element.onclick = cartPlus;
 });
-
 document.querySelectorAll('.showAlert').forEach(function (element) {
     element.onclick = showAlert;
 });
@@ -259,8 +258,8 @@ function addToCart() {
         cart[goodsId] = cart[goodsId];
     }
     else {
-        cart[goodsId] = 1;
-    }
+        ;
+    }cart[goodsId] = 1
 
     console.log(cart);
     ajaxGetGoodsInfo();
@@ -283,7 +282,7 @@ function showAlert() {
         showConfirmButton: false,
         timer: 1500
     }).then(closeModal);
-
+    gtag_report_conversion();
 }
 
 
@@ -362,3 +361,47 @@ function outsideClick(e) {
         e.target.style.display = 'none';
     }
 }
+
+let imgBtn = document.querySelectorAll('.cardImg');
+let closeImg = document.querySelectorAll('.closeImg');
+let testImg = document.querySelectorAll('.testImg');
+
+for (let i = 0; i < imgBtn.length; i++) {
+    imgBtn[i].addEventListener('click', openImg);
+    // Listen for close click
+    closeImg[i].addEventListener('click', closeImage);
+    testImg[i].addEventListener('click', closeImage);
+}
+
+function getImg(child) {
+    let modimg = child.parentNode;
+
+    while (modimg && modimg.className && !modimg.className.includes("sizedPhoto")) {
+        modimg = modimg.parentNode;
+    }
+    return modimg;
+}
+
+
+function openImg() {
+    let modimg = this.nextElementSibling;
+
+    if (modimg && modimg.className.includes("sizedPhoto")) {
+        modimg.style.display = 'block';
+    }
+}
+
+// Function to close modal
+function closeImage() {
+    let modimg = getImg(this);
+    if (modimg)
+        modimg.style.display = 'none';
+}
+
+// // Function to close modal if outside click
+// function outsideClick(e) {
+//     if (e.target && !e.target.className.includes("simpleModal") &&
+//         !getModal(e.target)) {
+//         e.target.style.display = 'none';
+//     }
+// }
