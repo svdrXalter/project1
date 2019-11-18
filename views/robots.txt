@@ -6,19 +6,19 @@ Disallow: /*.pdf$
 Disallow: /404.php
 
 User-agent: GoogleBot
-Disallow: /gost/
-Disallow: /cart/
+Disallow: /gost
+Disallow: /cart
 Disallow: /price
 Disallow: /*.pdf$
 Disallow: /404.php
 
 User-agent: YandexBot
-Disallow: /gost/
-Disallow: /cart/
+Disallow: /gost
+Disallow: /cart
 Disallow: /price
 Disallow: /*.pdf$
 Disallow: /404.php
 
-Host: https://www.inter-alfa.com.ua
+Host: https://inter-alfa.com.ua
 
-Sitemap: https://www.inter-alfa.com.ua/sitemap.xml
+Sitemap: https://inter-alfa.com.ua/sitemap.xml
